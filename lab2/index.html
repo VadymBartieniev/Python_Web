@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+
+<form action="/cgi-bin/form.py">
+    <label for="first-name">First name: </label><input type="text" name="first-name" id="first-name">
+    <br>
+    <label for="last-name">Last name: </label><input type="text" name="last-name" id="last-name">
+    <br><br>
+
+    <label for="male">
+        <input type="radio" name="state" id="male" value="male"> Male
+    </label>
+    <br>
+    <label for="female">
+        <input type="radio" name="state" id="female" value="female"> Female
+    </label>
+
+    <br><br>
+    <label for="is-adult">
+        <input type="checkbox" name="is-adult" id="is-adult"> Is be 18 years old.
+    </label>
+    <br><br>
+
+    <input type="submit" value="Submit form!">
+
+</form>
+
+</body>
+</html>
