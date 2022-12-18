@@ -1,0 +1,34 @@
+{% from "_render_field.html" import render_field %}
+{% extends "parent.html" %}
+
+{%block title%}
+Form!
+{% endblock %}
+
+{%block content %}
+<div class="form">
+    <h1>Login form:</h1>
+    <form method="POST" action="{{ url_for('form') }}">
+        {{ form.csrf_token }}
+
+        {{ render_field(form.name) }}
+
+        <br>
+
+        {{ render_field(form.email) }}
+
+        <br>
+        {{ render_field(form.phone) }}
+
+        <br>
+        {{ render_field(form.subject) }}
+
+        <br>
+        {{ render_field(form.message) }}
+
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}
